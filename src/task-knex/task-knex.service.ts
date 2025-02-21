@@ -19,7 +19,6 @@ export class TaskKnexService {
   }
   createTask(newTask: any) {
     const { title, description } = newTask;
-    console.log('newTask', newTask);
     return this.taskManagementConnection('task')
       .insert({
         title: title,
